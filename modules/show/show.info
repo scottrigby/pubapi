@@ -1,0 +1,6 @@
+name = Show entity
+core = 7.x
+package = Pub
+dependencies[] = field
+files[] = show.test
+configure = admin/structure/show/manage
