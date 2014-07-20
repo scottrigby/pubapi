@@ -1,0 +1,114 @@
+show:
+  label: Show
+  properties:
+    name:
+      type: Text
+      label: Show name
+    id:
+      type: Integer
+      label: Show ID
+    description:
+      type: Text
+      label: Show description
+    genre:
+      type: Text
+      label: Show genre
+    seasons:
+      type: Reference
+      label: "The show's seasons"
+    status:
+      type: Boolean
+      label: Show published status
+season:
+  label: Season
+  properties:
+    name:
+      type: Text
+      label: Season name
+    id:
+      type: Integer
+      label: Season ID
+    description:
+      type: Text
+      label: Season description
+    show:
+      type: Text
+      label: Show
+    episodes:
+      type: Reference
+      label: "The season's episodes"
+    status:
+      type: Boolean
+      label: Season status
+episode:
+  label: Episode
+  properties:
+    name:
+      type: Text
+      label: Episode name
+    id:
+      type: Integer
+      label: Episode ID
+    description:
+      type: Text
+      label: Episode description
+    show:
+      type: Reference
+      label: "The episode's show"
+    season:
+      type: Reference
+      label: "The episode's season"
+    status:
+      type: Boolean
+      label: Episode status
+blog:
+  label: Blog
+  properties:
+    name:
+      type: Text
+      label: Blog name
+    id:
+      type: Integer
+      label: Blog ID
+    description:
+      type: Text
+      label: Blog description
+    show:
+      type: Reference
+      label: "The blog's show"
+    season:
+      type: Reference
+      label: "The blog's season"
+    episode:
+      type: Reference
+      label: "The blog's episode"
+    status:
+      type: Boolean
+      label: Blog status
+gallery:
+  label: Gallery
+  properties:
+    name:
+      type: Text
+      label: Gallery name
+    id:
+      type: Integer
+      label: Gallery ID
+    description:
+      type: Text
+      label: Gallery description
+    photos:
+      type: Image
+      label: Gallery photos
+    show:
+      type: Reference
+      label: "The gallery's show"
+    season:
+      type: Reference
+      label: "The gallery's season"
+    episode:
+      type: Reference
+      label: "The gallery's episode"
+    status:
+      type: Boolean
+      label: Gallery status
