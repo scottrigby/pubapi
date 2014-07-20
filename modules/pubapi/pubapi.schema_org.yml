@@ -1,0 +1,64 @@
+# Sample YAML/schema.org version of pubapi_get_structure().
+#
+# Each YAML key matches the schema.org object by the same name (example:
+# TVSeries is documented at http://schema.org/TVSeries), with the label as it's
+# corresponding value.
+
+TVSeries: 'Show'
+  name: 'Show name'
+  url: 'Show URI'
+  description: 'Show description'
+  genre: 'Show genre'
+  seasons: 'A list of seasons'
+
+Season: 'Season'
+  name: 'Season name'
+  url: 'Season URI'
+  description: 'Season URI'
+  show: "The season's show"
+  episodes: 'Episodes'
+
+Episode: 'Episode'
+  name: 'Episode name'
+  url: 'Episode URI'
+  description: 'Episode description'
+  show: "The episode's show"
+  season: "The episode's season"
+
+# 1. How do we reference the episode/season/show?
+# 2. What is the relationship to blogPost/BlogPosting from this object?
+Blog: 'Blog'
+  name: 'Blog name'
+  url: 'Blog URI'
+  description: 'Blog description'
+  #publisher: DO WE WANT THIS? BRAND PARTNER ETC.
+  #show: "The blog's show"
+  #season: "The blog's season"
+  #episode: "The blog's episode"
+
+BlogPosting: 'Blog post'
+  name: 'Blog post title'
+  articleBody: 'Blog post body'
+  #articleSection: CAN THIS BE USED AS THE EPISODE/SEASON/SHOW REFERENCE?
+
+# CAN THIS BE THE WAY THAT ImageGallery CONNECTS TO EPISODE/SEASON/SHOW, VIA
+# relatedLink, OR isPartOf? (SEE BOTTOM LINK FOR isPartOf:WebPage AT
+# http://schema.org/CollectionPage).
+#CollectionPage:
+
+# How do we:
+# 1. List the photos?
+# 2. Reference a show? (if the answer is that the isPartOf page should link,
+#    then I'm all for that).
+ImageGallery: 'Photo gallery'
+  name: 'Photo gallery name'
+  url: 'Photo gallery URI'
+  description: 'Photo gallery description'
+  primaryImageOfPage: 'Photo gallery main image'
+  isPartOf: 'Indicates the collection or gallery to which the item belongs'
+  #photos: "The gallery's photos"
+  #show: "The blog's show"
+  #season: "The blog's season"
+  #episode: "The blog's episode"
+
+#VideoGallery:
