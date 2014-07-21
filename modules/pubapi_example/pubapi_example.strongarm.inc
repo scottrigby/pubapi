@@ -561,289 +561,53 @@ function pubapi_example_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_description';
-  $strongarm->value = 'body';
-  $export['restws_schema_ui_blog_property_description'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_episode';
-  $strongarm->value = 'field_episode';
-  $export['restws_schema_ui_blog_property_episode'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_id';
-  $strongarm->value = 'nid';
-  $export['restws_schema_ui_blog_property_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_name';
-  $strongarm->value = 'title';
-  $export['restws_schema_ui_blog_property_name'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_season';
-  $strongarm->value = 'field_season';
-  $export['restws_schema_ui_blog_property_season'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_show';
-  $strongarm->value = 'field_show';
-  $export['restws_schema_ui_blog_property_show'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_blog_property_status';
-  $strongarm->value = 'status';
-  $export['restws_schema_ui_blog_property_status'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_bundle_blog';
-  $strongarm->value = 'article';
-  $export['restws_schema_ui_bundle_blog'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_bundle_episode';
-  $strongarm->value = 'episode';
-  $export['restws_schema_ui_bundle_episode'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_bundle_gallery';
-  $strongarm->value = 'gallery';
-  $export['restws_schema_ui_bundle_gallery'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_bundle_season';
-  $strongarm->value = 'season';
-  $export['restws_schema_ui_bundle_season'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_bundle_show';
-  $strongarm->value = 'page';
-  $export['restws_schema_ui_bundle_show'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_entity_type_blog';
-  $strongarm->value = 'node';
-  $export['restws_schema_ui_entity_type_blog'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_entity_type_episode';
-  $strongarm->value = 'node';
-  $export['restws_schema_ui_entity_type_episode'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_entity_type_gallery';
-  $strongarm->value = 'node';
-  $export['restws_schema_ui_entity_type_gallery'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_entity_type_season';
-  $strongarm->value = 'node';
-  $export['restws_schema_ui_entity_type_season'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_entity_type_show';
-  $strongarm->value = 'node';
-  $export['restws_schema_ui_entity_type_show'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_episode_property_description';
-  $strongarm->value = 'body';
-  $export['restws_schema_ui_episode_property_description'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_episode_property_id';
-  $strongarm->value = 'nid';
-  $export['restws_schema_ui_episode_property_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_episode_property_name';
-  $strongarm->value = 'title';
-  $export['restws_schema_ui_episode_property_name'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_episode_property_season';
-  $strongarm->value = 'field_season';
-  $export['restws_schema_ui_episode_property_season'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_episode_property_show';
-  $strongarm->value = 'field_show';
-  $export['restws_schema_ui_episode_property_show'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_episode_property_status';
-  $strongarm->value = 'status';
-  $export['restws_schema_ui_episode_property_status'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_description';
-  $strongarm->value = 'body';
-  $export['restws_schema_ui_gallery_property_description'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_episode';
-  $strongarm->value = 'field_episode';
-  $export['restws_schema_ui_gallery_property_episode'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_id';
-  $strongarm->value = 'nid';
-  $export['restws_schema_ui_gallery_property_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_name';
-  $strongarm->value = 'title';
-  $export['restws_schema_ui_gallery_property_name'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_photos';
-  $strongarm->value = 'field_photos';
-  $export['restws_schema_ui_gallery_property_photos'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_season';
-  $strongarm->value = 'field_season';
-  $export['restws_schema_ui_gallery_property_season'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_show';
-  $strongarm->value = 'field_show';
-  $export['restws_schema_ui_gallery_property_show'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_gallery_property_status';
-  $strongarm->value = 'status';
-  $export['restws_schema_ui_gallery_property_status'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_season_property_description';
-  $strongarm->value = 'body';
-  $export['restws_schema_ui_season_property_description'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_season_property_id';
-  $strongarm->value = 'nid';
-  $export['restws_schema_ui_season_property_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_season_property_name';
-  $strongarm->value = 'title';
-  $export['restws_schema_ui_season_property_name'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_season_property_show';
-  $strongarm->value = 'field_show';
-  $export['restws_schema_ui_season_property_show'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_season_property_status';
-  $strongarm->value = 'status';
-  $export['restws_schema_ui_season_property_status'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_show_property_description';
-  $strongarm->value = 'body';
-  $export['restws_schema_ui_show_property_description'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_show_property_genre';
-  $strongarm->value = 'field_genre';
-  $export['restws_schema_ui_show_property_genre'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_show_property_id';
-  $strongarm->value = 'nid';
-  $export['restws_schema_ui_show_property_id'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_show_property_name';
-  $strongarm->value = 'title';
-  $export['restws_schema_ui_show_property_name'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'restws_schema_ui_show_property_status';
-  $strongarm->value = 'status';
-  $export['restws_schema_ui_show_property_status'] = $strongarm;
+  $strongarm->name = 'restws_schema_map';
+  $strongarm->value = array(
+    'show:entity' => 'node',
+    'show:bundle' => 'page',
+    'show:name' => 'title',
+    'show:id' => 'nid',
+    'show:description' => 'body',
+    'show:genre' => 'field_genre',
+    'show:seasons' => 'field_seasons',
+    'show:status' => 'status',
+    'season:entity' => 'node',
+    'season:bundle' => 'season',
+    'season:name' => 'title',
+    'season:id' => 'nid',
+    'season:description' => 'body',
+    'season:show' => 'field_show',
+    'season:episodes' => 'field_episodes',
+    'season:status' => 'status',
+    'episode:entity' => 'node',
+    'episode:bundle' => 'episode',
+    'episode:name' => 'title',
+    'episode:id' => 'nid',
+    'episode:description' => 'body',
+    'episode:show' => 'field_show',
+    'episode:season' => 'field_season',
+    'episode:status' => 'status',
+    'blog:entity' => 'node',
+    'blog:bundle' => 'article',
+    'blog:name' => 'title',
+    'blog:id' => 'nid',
+    'blog:description' => 'body',
+    'blog:show' => 'field_show',
+    'blog:season' => 'field_season',
+    'blog:episode' => 'field_episode',
+    'blog:status' => 'status',
+    'gallery:entity' => 'node',
+    'gallery:bundle' => 'gallery',
+    'gallery:name' => 'title',
+    'gallery:id' => 'nid',
+    'gallery:description' => 'body',
+    'gallery:photos' => 'field_photos',
+    'gallery:show' => 'field_show',
+    'gallery:season' => 'field_season',
+    'gallery:episode' => 'field_episode',
+    'gallery:status' => 'status',
+  );
+  $export['restws_schema_map'] = $strongarm;
 
   return $export;
 }
